@@ -22,7 +22,7 @@ projection: {name: 1, founded_year:1}
 
 ### 4. All the companies that had a Valuation Amount of more than 100.000.000 and have been founded before 2010. Retrieve only the `name` and `ipo` fields.
 
-query: { $and: [ {"ipo.valuation_amount": {$gt:18100000000}}, {founded_year: {$lt:2010}} ] }
+query: { $and: [ {"ipo.valuation_amount": {$gt:100000000}}, {founded_year: {$lt:2010}} ] }
 projection: {name:1, "ipo.valuation_amount": 1}
 
 
